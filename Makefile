@@ -9,6 +9,3 @@ ColdWhite_FRAMEWORKS = UIKit CoreGraphics
 include $(THEOS_MAKE_PATH)/tweak.mk
 SUBPROJECTS += ColdWhitePrefs
 include $(THEOS_MAKE_PATH)/aggregate.mk
-after-stage::
-	mkdir -p $(THEOS_STAGING_DIR)/Library/PreferenceLoader/Preferences
-	cp ColdWhitePrefs/ColdWhitePrefs.plist $(THEOS_STAGING_DIR)/Library/PreferenceLoader/Preferences/
