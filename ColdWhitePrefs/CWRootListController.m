@@ -26,7 +26,7 @@
         PSSpecifier *r=[PSSpecifier preferenceSpecifierNamed:@"恢复原厂"
             target:self set:nil get:nil detail:nil cell:PSButtonCell edit:nil];
         [r setProperty:@"resetTemperature" forKey:@"action"];
-        _specifiers=@[g,s,r];
+        _specifiers = [NSMutableArray arrayWithObjects:g, s, r, nil];
     }
     return _specifiers;
 }
